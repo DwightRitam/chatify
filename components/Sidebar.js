@@ -43,9 +43,9 @@ const redirect = (id) => {
       chats?.filter(chat => chat.users.includes(user.email))
       .map(
         chat => 
-          <Flex key={Math.random()} p={3} align="center" _hover={{bg: "gray.100", cursor: "pointer"}} onClick={() => redirect(chat.id)}>
-            <Avatar src={chat.photoURL} marginEnd={3} />
-            <Text>{getOtherEmail(chat.users, user)}</Text>
+          <Flex key={Math.random()}  className="sm:p-[10px]  p-[5px]" align="center" _hover={{bg: "gray.100", cursor: "pointer"}} onClick={() => redirect(chat.id)}>
+            <img src="https://media.tenor.com/5a7v-p3E5pkAAAAC/discord.gif" className="md:w-[50px] w-[30px] rounded-[30px] bg-slate-400" marginEnd={3} />
+            <Text className="sm:ml-[5px] ml-[2px] sm:text-[17px]  text-[10px]">{getOtherEmail(chat.users, user)}</Text>
           </Flex>
       )
     )
@@ -57,7 +57,7 @@ const redirect = (id) => {
         <Flex
             // bg="blue.100"
 
-            w="300px"
+            className="md:w-[300px] w-[170px]"
             h="100%"
             borderEnd="1px solid" borderColor="gray.200"
             direction="column"
@@ -74,8 +74,8 @@ const redirect = (id) => {
             >
 
                 <Flex align="center">
-                    <Avatar src={user.photoURL} marginEnd={3} />
-                    <Text>{user.displayName}</Text>
+                    <Avatar src={user.photoURL} marginEnd={3} className="hidden" />
+                    <Text className="md:flex hidden">{user.displayName}</Text>
                 </Flex>
 
                 <IconButton size="sm" isRound icon={<ArrowLeftIcon />} onClick={() => signOut(auth)} />

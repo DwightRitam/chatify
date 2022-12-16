@@ -5,6 +5,6 @@
 ::-webkit-scrollbar{
     display: none;
 }
-/* body{
-    cursor: url("../cursor/chat\ \(1\).svg") 32 32, pointer;
-} */
+body{
+    cursor: url("../assets/chat\ \(1\).svg") 32 32, pointer;
+}

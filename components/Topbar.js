@@ -8,7 +8,7 @@ export default function Topbar({email}) {
       align="center"
       p={5}
     >
-      <Avatar src="" marginEnd={3} />
+      <Avatar src="https://media.tenor.com/6BxeLIUk8iAAAAAj/whatsapp-chat.gif" marginEnd={3} />
       <Heading size="lg" className="font-serif text-slate-600">{email}</Heading>
 
 

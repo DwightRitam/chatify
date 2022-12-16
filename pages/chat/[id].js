@@ -49,7 +49,7 @@ const id = () => {
       <Flex
 
      
-      className='h-[173vh] sm:h-[100vh]'
+      className='h-[150vh] sm:h-[100vh]'
     >
       <Head><title>Chat App</title></Head>
 
